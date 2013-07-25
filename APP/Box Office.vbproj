@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E5F6D8B9-31EC-4C10-8E7D-8AA2E485DE99}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Box_Office.My.MyApplication</StartupObject>
+    <RootNamespace>Box_Office</RootNamespace>
+    <AssemblyName>Box Office</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Box Office.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Box Office.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddMovie.designer.vb">
+      <DependentUpon>AddMovie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddMovie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrowseByMovie.Designer.vb">
+      <DependentUpon>BrowseByMovie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BrowseByMovie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Changemovieshows.designer.vb">
+      <DependentUpon>Changemovieshows.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Changemovieshows.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administator.designer.vb">
+      <DependentUpon>Administator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdvancedBooking.designer.vb">
+      <DependentUpon>AdvancedBooking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdvancedBooking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrowseByDate.Designer.vb">
+      <DependentUpon>BrowseByDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BrowseByDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Changeadminpass.Designer.vb">
+      <DependentUpon>Changeadminpass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Changeadminpass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changePrice.designer.vb">
+      <DependentUpon>changePrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="changePrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefaultPage.designer.vb">
+      <DependentUpon>DefaultPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CurrentBooking.Designer.vb">
+      <DependentUpon>CurrentBooking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CurrentBooking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Background.Designer.vb">
+      <DependentUpon>Background.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Background.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteUser.Designer.vb">
+      <DependentUpon>DeleteUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditMovie.designer.vb">
+      <DependentUpon>EditMovie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditMovie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditShow.Designer.vb">
+      <DependentUpon>EditShow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditShow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print form.designer.vb">
+      <DependentUpon>print form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="print form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeleConfirm.Designer.vb">
+      <DependentUpon>TeleConfirm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeleConfirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeleID.Designer.vb">
+      <DependentUpon>TeleID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeleID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update date.designer.vb">
+      <DependentUpon>update date.vb</DependentUpon>
+    </Compile>
+    <Compile Include="update date.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewUser.Designer.vb">
+      <DependentUpon>ViewUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.vb">
+      <DependentUpon>LogIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="NewUser.Designer.vb">
+      <DependentUpon>NewUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.vb">
+      <DependentUpon>AdminLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seat165.designer.vb">
+      <DependentUpon>Seat165.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seat165.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seat210.designer.vb">
+      <DependentUpon>Seat210.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seat210.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.Designer.vb">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeleBooking.Designer.vb">
+      <DependentUpon>TeleBooking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeleBooking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddMovie.resx">
+      <DependentUpon>AddMovie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowseByMovie.resx">
+      <DependentUpon>BrowseByMovie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Changemovieshows.resx">
+      <DependentUpon>Changemovieshows.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administator.resx">
+      <DependentUpon>Administator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvancedBooking.resx">
+      <DependentUpon>AdvancedBooking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Background.resx">
+      <DependentUpon>Background.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowseByDate.resx">
+      <DependentUpon>BrowseByDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Changeadminpass.resx">
+      <DependentUpon>Changeadminpass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changePrice.resx">
+      <DependentUpon>changePrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefaultPage.resx">
+      <DependentUpon>DefaultPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurrentBooking.resx">
+      <DependentUpon>CurrentBooking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteUser.resx">
+      <DependentUpon>DeleteUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditMovie.resx">
+      <DependentUpon>EditMovie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditShow.resx">
+      <DependentUpon>EditShow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewUser.resx">
+      <DependentUpon>NewUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print form.resx">
+      <DependentUpon>print form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seat165.resx">
+      <DependentUpon>Seat165.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seat210.resx">
+      <DependentUpon>Seat210.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeleConfirm.resx">
+      <DependentUpon>TeleConfirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeleID.resx">
+      <DependentUpon>TeleID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update date.resx">
+      <DependentUpon>update date.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewUser.resx">
+      <DependentUpon>ViewUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeleBooking.resx">
+      <DependentUpon>TeleBooking.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ready - Cover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Double-Dhamaal-Movie-Poster-01-100x150.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doubledhamaal3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inox-Leisure.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inox_logo_190.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie-theatre.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ready2011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\550w_movies_x-men_first_class.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-men+first+class+wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Double-Dhamaal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M2427_1bheja-fry-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Always-Kabhi-Kabhi-Hindi1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie-theatre1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie-theatre2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto_4540398-flying-film-reel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto_4540398-flying-film-reel1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th_back-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mayajaal-hall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inox-Leisure1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inox.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-save-14.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator_add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol_HookOK_18px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telephone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgAdvanceScheduling.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconRedX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inox_logo_1901.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_icon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
